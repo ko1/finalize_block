@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Koichi Sasada"]
   spec.email         = ["ko1@atdot.net"]
 
-  spec.summary       = %q{This gem provide `finalize_block` method.}
-  spec.description   = %q{This gem provide `finalize_block` method.}
-  spec.homepage      = "http://atdot.net/~ko1/"
+  spec.summary       = %q{Joke gem - This gem provide `finalize_block` method.}
+  spec.description   = %q{Joke gem - This gem provide `finalize_block` method.}
+  spec.homepage      = "https://github.com/ko1/finalize_block"
   spec.license       = "MIT"
 
 =begin

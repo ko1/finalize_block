@@ -1,6 +1,7 @@
 # FinalizeBlock
 
-
+Joke gem - This gem provide `finalize_block` method.
+(or demonstration)
 
 ## Installation
 

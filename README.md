@@ -22,6 +22,10 @@ Or install it yourself as:
 ## Usage
 
 You can use `finalize_block` method with a cleanup rule for a Class.
+A rule is `a Class => Action Proc instance (action)` (now we support one pair of them).
+
+All created objects (which are specified by a rule) in a block are passed to action proc at the end of block.
+If created objects are freeed in a block, an action will not be called for freeed objects.
 
 ```
 require 'finalize_block'
@@ -30,12 +34,14 @@ finalize_block String => -> str do
   # clear procedure by replacing with emtpy string.
   str.replace ''
 end do
-  $g = 'a' * 256
-  p $g.size #=> 256
+  $g = 'a' * 256     # create a String object
+  p $g.size #=> 256  # 256B. Good.
 end
 
-p $g #=> '' # cleared
+p $g #=> '' # cleard at the end of block. Cool.
 ```
+
+Note that this library is not tested and should be very buggy.
 
 ## Development
 

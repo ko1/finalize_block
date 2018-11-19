@@ -25,7 +25,7 @@ You can use `finalize_block` method with a cleanup rule for a Class.
 A rule is `a Class => Action Proc instance (action)` (now we support one pair of them).
 
 All created objects (which are specified by a rule) in a block are passed to action proc at the end of block.
-If created objects are freeed in a block, an action will not be called for freeed objects.
+If created objects are freed in a block, an action will not be called for freed objects.
 
 ```
 require 'finalize_block'
@@ -38,7 +38,7 @@ end do
   p $g.size #=> 256  # 256B. Good.
 end
 
-p $g #=> '' # cleard at the end of block. Cool.
+p $g #=> '' # cleared at the end of block. Cool.
 ```
 
 Note that this library is not tested and should be very buggy.

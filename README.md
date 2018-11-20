@@ -51,7 +51,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/finalize_block.
+Bug reports and pull requests are welcome on GitHub at https://github.com/ko1/finalize_block.
 
 ## License
 
